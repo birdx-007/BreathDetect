@@ -1,0 +1,18 @@
+{
+    "name": "com.heartofbird.savesystem",
+    "version": "1.0.0",
+    "displayName": "HeartofBird SaveSystem",
+    "description": "HeartofBird SaveSystem",
+    "unity": "2019.1",
+    "dependencies": {
+    },
+   "keywords": [
+      "save",
+      "savesystem",
+      "SaveSystem"
+    ],
+    "author": {
+      "name": "birdx",
+      "email": "birdnox007@gmail.com"
+    }
+  }

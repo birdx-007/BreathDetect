@@ -1,0 +1,26 @@
+{
+    "name": "BreathDetect.RunTime",
+    "rootNamespace": "",
+    "references": [
+        "UniTask",
+        "UniTask.Addressables",
+        "UniTask.DOTween",
+        "UniTask.Editor",
+        "UniTask.Linq",
+        "UniTask.TextMeshPro",
+        "Mediapipe.Runtime",
+        "Mediapipe.Tests.EditMode",
+        "NaughtyAttributes.Core",
+        "NaughtyAttributes.Editor",
+        "SaveSystem.Runtime"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

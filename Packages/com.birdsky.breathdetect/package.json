@@ -1,0 +1,21 @@
+{
+    "name": "com.birdsky.breathdetect",
+    "version": "1.0.0",
+    "displayName": "BirdSky BreathDetect",
+    "description": "BirdSky BreathDetect",
+    "unity": "2022.3",
+    "dependencies": {
+      "com.github.homuler.mediapipe": "0.16.2",
+      "com.cysharp.unitask": "2.5.10",
+      "com.dbrizov.naughtyattributes":"2.1.4"
+    },
+   "keywords": [
+      "breathdetect",
+      "BreathDetect"
+    ],
+    "author": {
+      "name": "birdx",
+      "email": "birdnox007@gmail.com"
+    }
+  }
+  
