@@ -4,11 +4,7 @@
       "version": "file:com.birdsky.breathdetect",
       "depth": 0,
       "source": "embedded",
-      "dependencies": {
-        "com.github.homuler.mediapipe": "0.16.2",
-        "com.cysharp.unitask": "2.5.10",
-        "com.dbrizov.naughtyattributes": "2.1.4"
-      }
+      "dependencies": {}
     },
     "com.cysharp.unitask": {
       "version": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
