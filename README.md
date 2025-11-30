@@ -2,17 +2,16 @@
 
 This system is developed to detect whether the user is exhaling or not.
 
-## Install
+## Install Package
 
 (1) First you need to install:
 
-UniTask (https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask),
-
-NaughtyAttributes (https://github.com/dbrizov/NaughtyAttributes.git#upm)
-
-SaveSystem (https://github.com/birdx-007/BreathDetect.git?path=Packages/com.heartofbird.savesystem) 
-
-MediaPipe Unity Plugin (no direct install url, you can check its github repository for more info).
+| Name                   | git url                                                      |
+| ---------------------- | ------------------------------------------------------------ |
+| UniTask                | https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask |
+| NaughtyAttributes      | https://github.com/dbrizov/NaughtyAttributes.git#upm         |
+| SaveSystem             | https://github.com/birdx-007/BreathDetect.git?path=Packages/com.heartofbird.savesystem |
+| MediaPipe Unity Plugin | no direct git url, you can check its github repository (https://github.com/homuler/MediaPipeUnityPlugin) for more info |
 
 (2) Install BreathDetect:
 
