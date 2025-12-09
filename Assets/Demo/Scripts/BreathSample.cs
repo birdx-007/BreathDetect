@@ -245,6 +245,7 @@ namespace BirdSky
         private readonly int sampleNum = 700;
         private bool isSampling = false;
         [ReadOnly] public bool enableSample = true;
+        public string sampleCompleteHint;
         public void StartSampleProcess()
         {
             BreathReceiver.StartBreathSample(UpdateSampleProcess);
@@ -312,7 +313,7 @@ namespace BirdSky
                     default:
                         break;
                 }
-                mainGuideText.text = "完成！如果感觉没有做好，可点击左边的按钮重新采样";
+                mainGuideText.text = sampleCompleteHint;
             }
         }
         public void OnAllSampleProcessesComplete()

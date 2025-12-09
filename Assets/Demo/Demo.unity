@@ -1217,6 +1217,8 @@ MonoBehaviour:
   mainSampleProcess: {fileID: 1090933911}
   testPanel: {fileID: 1572709988}
   enableSample: 1
+  sampleCompleteHint: Done! If you feel it's not quite right, click the button on
+    the left to resample.
 --- !u!1001 &162323870
 PrefabInstance:
   m_ObjectHideFlags: 0

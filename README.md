@@ -23,6 +23,16 @@ You can clone this repository and open this project with Unity (my editor is 202
 
 Enter the demo scene and play it to check out how the system work.
 
+## Update Log
+
+### v1.0.0
+
+Basic detection based on sound intensity threshold.
+
+### v1.1.0
+
+Optimized audio detection solution combining sound intensity and spectral cosine similarity.
+
 ## Feedback
 
 we are still developing this system, and feedback is welcome.
