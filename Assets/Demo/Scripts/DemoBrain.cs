@@ -13,6 +13,7 @@ namespace BirdSky
         [Header("basic")]
         public NoiseDetect noiseDetect;
         public AudioSetup audioSetup;
+        public WebCamSetup webCamSetup;
         public BreathSample breathSample;
         private void Start()
         {
@@ -26,6 +27,10 @@ namespace BirdSky
         public void BeginAudioSetup()
         {
             audioSetup.EnterAudioSetup();
+        }
+        public void BeginWebCamSetup()
+        {
+            webCamSetup.EnterWebCamSetup();
         }
         public void BeginBreathSample()
         {

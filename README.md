@@ -33,6 +33,10 @@ Basic detection based on sound intensity threshold.
 
 Optimized audio detection solution combining sound intensity and spectral cosine similarity.
 
+### v1.2.0
+
+Introducing a video detection method based on facial recognition.
+
 ## Feedback
 
 we are still developing this system, and feedback is welcome.

@@ -26,7 +26,9 @@ namespace BreathDetect
             float huConfidence = (energy >= huAverageEnergy * 0.4f ? 1 : Mathf.Exp(-2 * Mathf.Abs(energy - huAverageEnergy * 0.4f))) + SignalProcessor.CosineSimilarity(huAverageSpectrum, spectrum);
             float xiConfidence = Mathf.Exp(-2 * Mathf.Abs(energy - xiAverageEnergy)) + SignalProcessor.CosineSimilarity(xiAverageSpectrum, spectrum);
             float bingConfidence = Mathf.Exp(-2 * Mathf.Abs(energy - bingAverageEnergy)) + SignalProcessor.CosineSimilarity(bingAverageSpectrum, spectrum);
-            return huConfidence > xiConfidence && huConfidence > bingConfidence;
+            bool audioJudgement = huConfidence > xiConfidence && huConfidence > bingConfidence;
+            bool mouthJudgement = MouthDetector.GetMouthJudgement(huAverageMouthOpeningDegree, xiAverageMouthOpeningDegree, bingAverageMouthOpeningDegree);
+            return mouthJudgement ? audioJudgement : false;
         }
         public static float longHuTimeThreshold = 4f;
         public static bool JudgeIsLongHu(float huTime)

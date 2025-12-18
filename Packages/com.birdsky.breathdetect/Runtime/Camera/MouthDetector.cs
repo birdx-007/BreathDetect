@@ -132,20 +132,14 @@ namespace BreathDetect
             instance.webCamTexture.Pause();
             instance.stopwatch.Stop();
         }
-        public static Vector3 CalculateMouthConfidence(float huAverage, float xiAverage, float bingAverage)
+        public static bool GetMouthJudgement(float huAverage, float xiAverage, float bingAverage)
         {
             if (!isReady || !hasDetectedFullMouth)
             {
-                return Vector3.zero;
+                return true;
             }
-            var res = Vector3.zero;
-            // hu
-            res.x = MouthOpeningDegree >= huAverage * 0.8f ? 1 : Mathf.Exp(-4 * Mathf.Abs(MouthOpeningDegree - huAverage));
-            // xi
-            res.y = Mathf.Exp(-8 * Mathf.Abs(MouthOpeningDegree - xiAverage));
-            // bing
-            res.z = Mathf.Exp(-8 * Mathf.Abs(MouthOpeningDegree - bingAverage));
-            return res;
+            float threshold = (huAverage + xiAverage + bingAverage) / 3.4f;
+            return MouthOpeningDegree >= threshold;
         }
     }
 }
